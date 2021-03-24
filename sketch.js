@@ -25,7 +25,7 @@ function setup(){
     man = new Man(200,500);
 
     for(var i = 0; i < maxDrops; i++ ){
-        drops.push(new createDrops(random(0,500), random(0,500)));
+        drops.push(new Drops(random(0,500), random(0,500)));
     }
 }
 
@@ -44,7 +44,7 @@ function draw(){
             break;
             default : break;
         }
-        thunder.scale = radom(0.3,0.6);
+        thunder.scale = random(0.3,0.6);
     }
     if(thunderCreatedFrame + 10 === frameCount && thunder){
         thunder.destroy();

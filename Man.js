@@ -11,6 +11,6 @@ class Man{
     display(){
         var pos = this.body.position;
         imageMode(CENTER);
-        image(this.image, x, y+70,300,300);
+        image(this.image, pos.x, pos.y+70,300,300);
     }
 }
